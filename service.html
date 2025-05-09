@@ -100,7 +100,7 @@
             <ul>
                 <li><a href="login.html">accueil</a></li>
                 <li><a href="service.html">services</a></li>
-                <li><a href="#">compte</a></li>
+                <li><a href="login.html">compte</a></li>
                 <li><a href="apropos.html">a propos</a></li>
                 <li><a href="contact.html">contact</a></li>
                 <!-- <label style="font-size: 1rem; color: white" for="theme">
@@ -123,20 +123,42 @@
         
     </div>
       
-          <!-- Header avec la Navbar
-          <header>
-              <h1>Bienvenue sur Mon Site</h1>
-              <nav>
-                  <ul>
-                      <li><a href="#home">Accueil</a></li>
-                      <li><a href="#services">Services</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li><a href="#about">À propos</a></li>
-                  </ul>
-              </nav>
-          </header> -->
-      
-          <!-- Section Services -->
+          <!-- Sidebar -->
+    <div>
+        <input id="checkbox" type="checkbox">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <i class="fas fa-home" style="color: white"></i>&nbsp;
+                    <a href="/">accueil</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-briefcase" style="color: white"></i>&nbsp;
+                    <a href="service.html">services</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-user" style="color: white"></i>&nbsp;
+                    <a href="login.html">compte</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-info-circle" style="color: white"></i>&nbsp;
+                    <a href="apropos.html">a propos</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope" style="color: white"></i> &nbsp;
+                    <a href="contact.html">contact</a>
+                  </li>
+            </ul>
+            
+            <label style="font-size: 1.2rem;" for="theme"> Thème:
+                <select name="theme" id="theme">
+                <option value="sombre">sombre</option>
+                <option value="clair">clair</option>
+             </select>
+            </label>
+            
+        </div>
+    </div>
           <section id="services">
               <div style="max-width: 1200px; margin: auto;">
                   <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Nos Services</h2>
