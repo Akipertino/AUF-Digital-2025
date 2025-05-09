@@ -15,17 +15,16 @@
       body {
         width: 100%;
         height: 100vh;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
         background-image: url("8710.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-
       }
 
       #container {
-        
         margin: 0 auto;
         color: white;
         width: 100%;
@@ -55,7 +54,6 @@
         border-bottom-left-radius: 25px;
         backdrop-filter: blur(4px);
       }
-
 
       .group {
         display: grid;
@@ -96,8 +94,8 @@
         background-color: black;
         /* border: 1px solid goldenrod; */
         cursor: pointer;
-        color: burlywood
-      } 
+        color: burlywood;
+      }
 
       .shapes {
         width: 300px;
@@ -132,7 +130,7 @@
         }
       }
       .error {
-        color:  tomato;
+        color: tomato;
         padding-left: 5px;
         font-size: 1rem;
         font-weight: 300;
@@ -172,14 +170,15 @@
         </li>
         <li>
           <i class="fas fa-envelope" style="color: white"></i>
-          <a href="#">contact</a>
+          <a href="contact.html">contact</a>
         </li>
-        <label style="font-size: 1.2rem;" for="theme"> Thème:
+        <!-- <label style="font-size: 1.2rem" for="theme">
+          Thème:
           <select name="theme" id="theme" class="themeGroup">
-          <option value="sombre">sombre</option>
-          <option value="clair">clair</option>
-       </select>
-      </label>
+            <option value="sombre">sombre</option>
+            <option value="clair">clair</option>
+          </select>
+        </label> -->
       </ul>
       <label for="checkbox">
         <div id="click">
@@ -196,7 +195,8 @@
       <div style="padding-top: 20px" class="sidebar">
         <ul>
           <li>
-            <i class="fas fa-home" style="color: white"></i> &nbsp;<a href="/"
+            <i class="fas fa-home" style="color: white"></i> &nbsp;<a
+              href="index.html"
               >accueil</a
             >
           </li>
@@ -230,12 +230,13 @@
           </li>
         </ul>
 
-        <label style="font-size: 1.2rem;" for="theme"> Thème:
-                <select name="theme" id="theme" class="themeGroup">
-                <option value="sombre">sombre</option>
-                <option value="clair">clair</option>
-             </select>
-            </label>
+        <!-- <label style="font-size: 1.2rem" for="theme">
+          Thème:
+          <select name="theme" id="theme" class="themeGroup">
+            <option value="sombre">sombre</option>
+            <option value="clair">clair</option>
+          </select>
+        </label> -->
       </div>
     </div>
     <div id="container">
@@ -243,7 +244,9 @@
       <div class="group">
         <form action="#">
           <div>
-            <h1 style="margin-bottom: 5px; font-size: clamp(1.5rem, 8vw, 1rem);">Bienvenue sur AUF Digital 2025</h1>
+            <h1 style="margin-bottom: 5px; font-size: clamp(1.5rem, 8vw, 1rem)">
+              Bienvenue sur AUF Digital 2025
+            </h1>
             <p>Créer un compte et pour accéder aux contenus des projets.</p>
             <h2>Inscrivez-vous</h2>
           </div>
@@ -257,7 +260,7 @@
           </div>
           <div id="emailDiv">
             <input id="email" type="text" placeholder="Email" />
-            <p style="color: gold;" class="error" id="emailError"></p>
+            <p style="color: gold" class="error" id="emailError"></p>
           </div>
           <div>
             <input id="date" type="date" placeholder="Date de naissance" />
@@ -299,19 +302,19 @@
           email: email.value,
           naissance: date.value,
         };
-        if(users.some((obj) => obj.email === email.value)) {
-            if(prenom.value.length <= 0) {
-              prenomError.textContent = "Le prénom ne doit pas être vide"
-            } else prenomError.textContent = ""
+        if (users.some((obj) => obj.email === email.value)) {
+          if (prenom.value.length <= 0) {
+            prenomError.textContent = "Le prénom ne doit pas être vide";
+          } else prenomError.textContent = "";
 
-            if(nom.value.length <= 0) {
-              nomError.textContent = "Le nom ne doit pas être vide"
-            } else nomError.textContent = ""
+          if (nom.value.length <= 0) {
+            nomError.textContent = "Le nom ne doit pas être vide";
+          } else nomError.textContent = "";
 
           p.innerText = "Cet adresse email existe déjà";
           e.preventDefault();
         } else {
-          p.innerText = ""
+          p.innerText = "";
           alert("Merci");
         }
         users.push(user);
