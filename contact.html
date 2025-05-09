@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUF - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <div class="navbar">
+        <span>LOGO</span>
+        <ul>
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="service.html">services</a></li>
+            <li><a href="login.html">compte</a></li>
+            <li><a href="apropos.html">a propos</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <label for="checkbox">
+            <div id="click">
+                <div class="cs" id="c1"></div>
+                <div class="cs" id="c2"></div>
+                <div class="cs" id="c3"></div>
+            </div>
+        </label>
+    </div>
+
+    <!-- Sidebar -->
+    <div>
+        <input id="checkbox" type="checkbox">
+        <div class="sidebar">
+            <ul>
+                <li><i class="fas fa-home" style="color: white"></i>&nbsp;<a href="index.html">accueil</a></li>
+                <li><i class="fas fa-briefcase" style="color: white"></i>&nbsp;<a href="service.html">services</a></li>
+                <li><i class="fas fa-user" style="color: white"></i>&nbsp;<a href="login.html">compte</a></li>
+                <li><i class="fas fa-info-circle" style="color: white"></i>&nbsp;<a href="apropos.html">a propos</a></li>
+                <li><i class="fas fa-envelope" style="color: white"></i>&nbsp;<a href="contact.html">contact</a></li>
+            </ul>
+            <label style="font-size: 1.2rem;" for="theme">Thème:
+                <select name="theme" id="theme">
+                    <option value="sombre">sombre</option>
+                    <option value="clair">clair</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="container" style="padding: 2rem;">
+        <h1 style="color: goldenrod; text-align: center;">Contactez-nous</h1>
+        <p style="text-align: center; font-size: 1.1rem;">Pour toute question, suggestion ou collaboration, veuillez remplir le formulaire ci-dessous.</p>
+
+        <form action="mailto:tonadresse@email.com" method="POST" enctype="text/plain" style="max-width: 600px; margin: auto;">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+            <label for="sujet">Sujet :</label><br>
+            <input type="text" id="sujet" name="sujet" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 10px;"></textarea><br>
+
+            <button type="submit" style="margin-top: 15px; padding: 10px 20px; background-color: goldenrod; color: white; border: none; cursor: pointer;">Envoyer</button>
+        </form>
+
+        
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <p><i class="fas fa-map-marker-alt"></i> Conakry, Guinée</p>
+            <p><i class="fas fa-phone-alt"></i> +224 622 123 456</p>
+            <p><i class="fas fa-envelope"></i> contact@aufdigital2025.gn</p>
+        </div>
+    </div>
+</body>
+</html>

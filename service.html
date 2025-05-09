@@ -1,0 +1,204 @@
+
+
+      <!DOCTYPE html>
+      <html lang="fr">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Mon Site - Services</title>
+          <link rel="stylesheet" href="style.css">
+          <!-- Lien vers une police Google Font si besoin -->
+          <style>
+              body {
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+              }
+      
+              header {
+                  background-color: #333;
+                  color: white;
+                  padding: 1rem 2rem;
+                  text-align: center;
+              }
+      
+              nav ul {
+                  display: flex;
+                  justify-content: center;
+                  list-style-type: none;
+                  padding: 0;
+              }
+      
+              nav ul li {
+                  margin: 0 1rem;
+              }
+      
+              nav ul li a {
+                  color: white;
+                  text-decoration: none;
+                  font-size: 1.1rem;
+              }
+      
+              section {
+                  padding: 4rem 2rem;
+              }
+      
+              section#services {
+                  background-color: #f9f9f9;
+              }
+      
+              .service-box {
+                  background: white;
+                  padding: 2rem;
+                  border-radius: 8px;
+                  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                  text-align: center;
+              }
+      
+              .service-box img {
+                  width: 64px;
+                  margin-bottom: 1rem;
+              }
+      
+              footer {
+                  background-color: #333;
+                  color: white;
+                  text-align: center;
+                  padding: 1rem;
+                  margin-top: 4rem;
+              }
+      
+              .service-section {
+                  display: flex;
+                  gap: 2rem;
+                  justify-content: center;
+                  flex-wrap: wrap;
+              }
+      
+              .service-box h3 {
+                  font-size: 1.6rem;
+                  margin-bottom: 1rem;
+              }
+      
+              .service-box ul {
+                  list-style-type: none;
+                  padding: 0;
+              }
+      
+              .service-box ul li {
+                  margin: 0.5rem 0;
+              }
+          </style>
+      </head>
+      <body>
+
+        <!-- Barre de navigation -->
+    <div class="navbar">
+        <span>LOGO</span>
+        <!-- <div class="div"> -->
+            <ul>
+                <li><a href="login.html">accueil</a></li>
+                <li><a href="service.html">services</a></li>
+                <li><a href="#">compte</a></li>
+                <li><a href="apropos.html">a propos</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <!-- <label style="font-size: 1rem; color: white" for="theme">
+                    <i class="fas fa-adjust fa-xl"></i>
+                    <select style="padding: 0;" name="theme" id="theme">
+                    <option value="sombre">sombre</option>
+                    <option value="clair">clair</option>
+                 </select>
+                </label> -->
+            </ul>
+        <!-- </div> -->
+        
+        <label for="checkbox">
+            <div id="click">
+                <div class="cs" id="c1"></div>
+                <div class="cs" id="c2"></div>
+                <div class="cs" id="c3"></div>
+            </div>
+        </label>
+        
+    </div>
+      
+          <!-- Header avec la Navbar
+          <header>
+              <h1>Bienvenue sur Mon Site</h1>
+              <nav>
+                  <ul>
+                      <li><a href="#home">Accueil</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="#about">À propos</a></li>
+                  </ul>
+              </nav>
+          </header> -->
+      
+          <!-- Section Services -->
+          <section id="services">
+              <div style="max-width: 1200px; margin: auto;">
+                  <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Nos Services</h2>
+                  <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: auto;">
+                      Nous proposons une gamme complète de services numériques pour accompagner les jeunes, les entreprises et les établissements éducatifs dans leur transformation digitale. Notre objectif : vous aider à acquérir des compétences, innover et réussir.
+                  </p>
+      
+                  <div class="service-section">
+                      <!-- Service 1 -->
+                      <div class="service-box">
+                          <img src="training.png" alt="Formation">
+                          <h3>Formations numériques</h3>
+                          <ul>
+                              <li>Développement web : HTML, CSS, JavaScript, Python</li>
+                              <li>Bureautique : Word, Excel, PowerPoint</li>
+                              <li>Canva & design graphique</li>
+                              <li>Cybersécurité de base</li>
+                              <li>Initiation pour élèves (KAF Junior)</li>
+                          </ul>
+                      </div>
+      
+                      <!-- Service 2 -->
+                      <div class="service-box">
+                          <img src="code.png" alt="Incubation">
+                          <h3>Incubation & projets numériques</h3>
+                          <ul>
+                              <li>Accompagnement de projets web</li>
+                              <li>Mentorat et coaching technique</li>
+                              <li>Hackathons & challenges étudiants</li>
+                              <li>Création de portfolio professionnel</li>
+                              <li>Suivi personnalisé</li>
+                          </ul>
+                      </div>
+      
+                      <!-- Service 3 -->
+                      <div class="service-box">
+                          <img src="images.png" alt="Insertion">
+                          <h3>Insertion & transformation digitale</h3>
+                          <ul>
+                              <li>Orientation vers les métiers du numérique</li>
+                              <li>Préparation au freelancing & emploi</li>
+                              <li>Création de CV numérique et profil LinkedIn</li>
+                              <li>Digitalisation des PME et ONG</li>
+                              <li>Support technique continu</li>
+                          </ul>
+                      </div>
+                  </div>
+      
+                  <div style="margin-top: 4rem; text-align: center;">
+                      <h3>Pourquoi nous choisir ?</h3>
+                      <p style="max-width: 800px; margin: auto; font-size: 1.1rem;">
+                          Notre approche est centrée sur la pratique, l'accessibilité et l'impact. Nous croyons au potentiel de chaque jeune et nous mettons à disposition un environnement d'apprentissage inclusif, des mentors passionnés et des outils modernes pour réussir dans l'économie numérique.
+                      </p>
+                  </div>
+              </div>
+          </section>
+      
+          <!-- Footer -->
+          <footer>
+              <p>&copy; 2025 AUF Digital 2025. Tous droits réservés.</p>
+          </footer>
+      
+      </body>
+      </html>
+      

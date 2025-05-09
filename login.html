@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUF -Connexion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        background-image: url("8710.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+      }
+
+      #container {
+        
+        margin: 0 auto;
+        color: white;
+        width: 100%;
+        /* height: calc(100% - 55px); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        width: 100%;
+      }
+      #container form h2 {
+        color: gold;
+        text-align: center;
+        font-size: clamp(3vw, 6vw, 1.5rem);
+        margin-top: 10px;
+      }
+      form {
+        /* border: 2px solid goldenrod; */
+        padding: 30px 20px;
+        background-color: rgba(255, 255, 255, 0.4);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        backdrop-filter: blur(4px);
+      }
+
+
+      .group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border: 2px solid goldenrod;
+        border-radius: 25px;
+      }
+      #submitDiv {
+        display: flex;
+        justify-content: center;
+      }
+      div input {
+        width: 100%;
+        height: 35px;
+        font-size: 1.1rem;
+        padding: 20px 15px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-weight: 500;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      form div button {
+        padding: 8px 20px;
+        font-size: 20px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        background-color: goldenrod;
+        /* align-self: flex-end; */
+        /* justify-self: flex-end; */
+        /* display: block; */
+        /* font-weight: bold; */
+        transition: 0.5s all;
+      }
+      form div button:hover {
+        background-color: black;
+        /* border: 1px solid goldenrod; */
+        cursor: pointer;
+        color: burlywood
+      } 
+
+      .shapes {
+        width: 300px;
+        height: 300px;
+        border: 10px dotted black;
+        background-color: orangered;
+        position: absolute;
+        /* z-index: 1; */
+        border-radius: 50%;
+        animation: 5s all;
+        transform: rotate(360deg);
+      }
+      .info img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        /* object-position: center; */
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+
+      @media screen and (max-width: 776px) {
+        .group {
+          grid-template-columns: 1fr;
+        }
+        .info {
+          display: none;
+        }
+        form {
+          border-radius: 25px;
+        }
+      }
+      .error {
+        color:  tomato;
+        padding-left: 5px;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      @media screen and (min-width: 1025px) {
+        #container {
+          max-width: 1000px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <div class="navbar">
+      <span>LOGO</span>
+      <ul>
+        <li>
+          <i class="fas fa-home" style="color: white"></i>
+          <a href="/">accueil</a>
+        </li>
+        <li>
+          <i class="fas fa-briefcase" style="color: white"></i>
+          <a href="service.html">services</a>
+        </li>
+        <li>
+          <i class="fas fa-user" style="color: white"></i>
+          <a href="login.html">compte</a>
+        </li>
+        <li>
+          <i class="fas fa-info-circle" style="color: white"></i>
+          <a href="apropos.html">a propos</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope" style="color: white"></i>
+          <a href="#">contact</a>
+        </li>
+      </ul>
+      <label for="checkbox">
+        <div id="click">
+          <div class="cs" id="c1"></div>
+          <div class="cs" id="c2"></div>
+          <div class="cs" id="c3"></div>
+        </div>
+      </label>
+    </div>
+
+    <!-- Sidebar -->
+    <div>
+      <input id="checkbox" type="checkbox" />
+      <div style="padding-top: 20px" class="sidebar">
+        <ul>
+          <li>
+            <i class="fas fa-home" style="color: white"></i> &nbsp;<a href="/"
+              >accueil</a
+            >
+          </li>
+          <li>
+            <i class="fas fa-briefcase" style="color: white"></i> &nbsp;<a
+              href="service.html"
+              >services</a
+            >
+          </li>
+          <li>
+            <i class="fas fa-user" style="color: white"></i> &nbsp;<a
+              href="login.html"
+              >compte</a
+            >
+          </li>
+          <li>
+            &nbsp;<i class="fas fa-info" style="color: white"></i>
+            &nbsp;&nbsp;<a href="apropos.html">a propos</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope" style="color: white"></i> &nbsp;<a
+              href="contact.html"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- <label style="font-size: 1.2rem;" for="theme"> Thème:
+                <select name="theme" id="theme">
+                <option value="sombre">sombre</option>
+                <option value="clair">clair</option>
+             </select>
+            </label> -->
+      </div>
+    </div>
+    <div id="container">
+      <!-- <div class="shape"></div> -->
+      <div class="group">
+        <form action="#">
+          <div>
+            <h1 style="margin-bottom: 5px; font-size: clamp(1.5rem, 8vw, 1rem);">Bienvenue sur AUF Digital 2025</h1>
+            <p>Créer un compte et pour accéder aux contenus des projets.</p>
+            <h2>Inscrivez-vous</h2>
+          </div>
+          <div id="prenomDiv">
+            <input id="prenom" type="text" placeholder="Prénom" />
+            <p class="error" id="prenomError"></p>
+          </div>
+          <div id="nomDiv">
+            <input id="nom" type="text" placeholder="Nom" />
+            <p class="error" id="nomError"></p>
+          </div>
+          <div id="emailDiv">
+            <input id="email" type="text" placeholder="Email" />
+            <p style="color: gold;" class="error" id="emailError"></p>
+          </div>
+          <div>
+            <input id="date" type="date" placeholder="Date de naissance" />
+          </div>
+          <div id="submitDiv">
+            <button id="valider">Se connecter</button>
+          </div>
+        </form>
+        <div class="info">
+          <img src="vector.jpg" alt="image non dispo" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const submitButton = document.querySelector("#valider");
+      const form = document.querySelector("form");
+      const prenom = document.querySelector("#prenom");
+      const nom = document.querySelector("#nom");
+      const email = document.querySelector("#email");
+      const date = document.querySelector("#date");
+      const prenomDiv = document.querySelector("#prenomDiv");
+      const nomDiv = document.querySelector("#nomDiv");
+      const emailDiv = document.querySelector("#emailDiv");
+      // localStorage.setItem("users", "")
+      const local = localStorage.getItem("users");
+      const users = local
+        ? JSON.parse(local)
+        : localStorage.setItem("users", "[]");
+      console.log(users);
+      const p = document.querySelector("#emailError");
+      const prenomError = document.querySelector("#prenomError");
+      const nomError = document.querySelector("#nomError");
+
+      form.addEventListener("submit", (e) => {
+        const user = {
+          prenom: prenom.value,
+          nom: nom.value,
+          email: email.value,
+          naissance: date.value,
+        };
+        if(users.some((obj) => obj.email === email.value)) {
+            if(prenom.value.length <= 0) {
+              prenomError.textContent = "Le prénom ne doit pas être vide"
+            } else prenomError.textContent = ""
+
+            if(nom.value.length <= 0) {
+              nomError.textContent = "Le nom ne doit pas être vide"
+            } else nomError.textContent = ""
+
+          p.innerText = "Cet adresse email existe déjà";
+          e.preventDefault();
+        } else {
+          p.innerText = ""
+          alert("Merci");
+        }
+        users.push(user);
+        localStorage.setItem("users", JSON.stringify(users));
+        console.log(users);
+      });
+    </script>
+  </body>
+</html>
