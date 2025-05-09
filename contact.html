@@ -12,40 +12,90 @@
     <div class="navbar">
         <span>LOGO</span>
         <ul>
-            <li><a href="index.html">accueil</a></li>
-            <li><a href="service.html">services</a></li>
-            <li><a href="login.html">compte</a></li>
-            <li><a href="apropos.html">a propos</a></li>
-            <li><a href="contact.html">contact</a></li>
+          <li>
+            <i class="fas fa-home" style="color: white"></i>
+            <a href="index.html">accueil</a>
+          </li>
+          <li>
+            <i class="fas fa-briefcase" style="color: white"></i>
+            <a href="service.html">services</a>
+          </li>
+          <li>
+            <i class="fas fa-user" style="color: white"></i>
+            <a href="login.html">compte</a>
+          </li>
+          <li>
+            <i class="fas fa-info-circle" style="color: white"></i>
+            <a href="apropos.html">a propos</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope" style="color: white"></i>
+            <a href="#">contact</a>
+          </li>
+          <label style="font-size: 1.2rem;" for="theme"> Thème:
+            <select name="theme" id="theme" class="themeGroup">
+            <option value="sombre">sombre</option>
+            <option value="clair">clair</option>
+         </select>
+        </label>
         </ul>
         <label for="checkbox">
-            <div id="click">
-                <div class="cs" id="c1"></div>
-                <div class="cs" id="c2"></div>
-                <div class="cs" id="c3"></div>
-            </div>
+          <div id="click">
+            <div class="cs" id="c1"></div>
+            <div class="cs" id="c2"></div>
+            <div class="cs" id="c3"></div>
+          </div>
         </label>
-    </div>
+      </div>
 
     <!-- Sidebar -->
     <div>
-        <input id="checkbox" type="checkbox">
-        <div class="sidebar">
-            <ul>
-                <li><i class="fas fa-home" style="color: white"></i>&nbsp;<a href="index.html">accueil</a></li>
-                <li><i class="fas fa-briefcase" style="color: white"></i>&nbsp;<a href="service.html">services</a></li>
-                <li><i class="fas fa-user" style="color: white"></i>&nbsp;<a href="login.html">compte</a></li>
-                <li><i class="fas fa-info-circle" style="color: white"></i>&nbsp;<a href="apropos.html">a propos</a></li>
-                <li><i class="fas fa-envelope" style="color: white"></i>&nbsp;<a href="contact.html">contact</a></li>
-            </ul>
-            <label style="font-size: 1.2rem;" for="theme">Thème:
-                <select name="theme" id="theme">
-                    <option value="sombre">sombre</option>
-                    <option value="clair">clair</option>
-                </select>
-            </label>
+        <input id="checkbox" type="checkbox" />
+        <div style="padding-top: 20px" class="sidebar">
+          <ul>
+            <li>
+              <i class="fas fa-home" style="color: white"></i> &nbsp;<a href="index.html"
+                >accueil</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-briefcase" style="color: white"></i> &nbsp;<a
+                href="service.html"
+                >services</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-user" style="color: white"></i> &nbsp;<a
+                href="login.html"
+                >compte</a
+              >
+            </li>
+            <li>
+                <i class="fas fa-dashboard" style="color: white"></i> &nbsp;<a
+                  href="dashboard.html"
+                  >dashboard</a
+                >
+              </li>
+            <li>
+              &nbsp;<i class="fas fa-info" style="color: white"></i>
+              &nbsp;&nbsp;<a href="apropos.html">a propos</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope" style="color: white"></i> &nbsp;<a
+                href="contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+  
+          <label style="font-size: 1.2rem;" for="theme"> Thème:
+                  <select name="theme" id="theme" class="themeGroup">
+                  <option value="sombre">sombre</option>
+                  <option value="clair">clair</option>
+               </select>
+              </label>
         </div>
-    </div>
+      </div>
 
     <!-- Contenu principal -->
     <div class="container" style="padding: 2rem;">
@@ -76,5 +126,7 @@
             <p><i class="fas fa-envelope"></i> contact@aufdigital2025.gn</p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

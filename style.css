@@ -12,7 +12,7 @@
     border: 1px solid white;
 }
 
-#theme {
+.themeGroup {
     font-size: 1.1rem;
     border-radius: 10px;
     outline: none;
@@ -212,8 +212,7 @@ p, li {
     margin: 0;
     padding: 0 25px;
     transition: 0.3s all;
-    height: calc(100% - 55px);
-    
+    height: calc(100% - 55px); 
 }
 .flou {
     filter: blur(3px)
@@ -347,6 +346,12 @@ p, li {
     .container {
         padding: 20px 30px;
     }
+    .sidebar {
+        display: none !important;
+    }
+    .flou {
+        filter: blur(0);
+    }
 }
 /* Ordis portables */
 @media screen and (min-width: 1025px) {
@@ -362,6 +367,13 @@ p, li {
     }
     .container {
         padding: 20px 100px;
+    }
+    .sidebar {
+        border: 5px solid green;
+        display: none !important;
+    }
+    .flou {
+        filter: blur(0);
     }
 }
 

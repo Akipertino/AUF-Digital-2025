@@ -5,7 +5,7 @@ const c1 = document.querySelector("#c1");
 const c2 = document.querySelector("#c2");
 const c3 = document.querySelector("#c3");
 
-const theme = document.querySelector("#theme")
+const themes = document.querySelectorAll(".themeGroup")
 const container = document.querySelector(".container")
 const sous_titre = document.querySelector("#sous_titre")
 const inscription_button = document.querySelector("#inscription_button")
@@ -86,11 +86,14 @@ function monTheme() {
 }
 }
 
-theme.addEventListener("change", ()=> {
+themes.forEach(theme => {
+  theme.addEventListener("change", ()=> {
   localStorage.setItem("mode", theme.value);
   console.log(localStorage.getItem("mode"))
   monTheme()
 })
+});
+
 
 check.addEventListener("change", () => {
     
